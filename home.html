@@ -1,0 +1,291 @@
+<html>
+<head>
+<link rel=stylesheet href=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src=https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js></script>
+    <script src=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js></script>   
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel=icon href="">
+    <link rel=stylesheet href="topnav.css">
+    <link rel=stylesheet href="home.css">
+    <meta name=viewport content=width=device-width, initial-scale=1.0><title>home</title>
+<script src="myscripts.js">
+</script>
+</head>
+<body onload="detect()">
+    <div class="main">
+<div class="container" id="contain">
+    <div class="row topnav1" id="decoy"></div>
+    <div class="row topnav">
+        <div id="mobile" style="height:50px;">
+         <button id="sidenav" onclick="openNav()"><img src="back/icons8-menu-26.png"></button>
+         <span class="txt"> Last Words</span>
+         <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              
+                <a class="home">Home</a>
+                <a class="about">About Us</a>
+                <a class="creator">Creators</a>
+                <span class="LI">
+                        <a class="user">Hello! Username</a>
+                <a class="logout" >Log Out</a>    
+                    </span>
+                <span class="notLI">
+                <a  class="libutton">Log In</a>
+                <a  class="subutton">Sign Up</a>
+            </span>
+                </div>
+        </div>
+        <div id="bigger-screens">
+            <div class="heading1">
+                <h1><center>Last Words</center></h1>
+            </div>
+        <span class="left">
+            <a id="active" class="home">Home</a>
+            <a class="about">About Us</a>
+            <a class="creator">Creator</a>
+        </span>
+        <span class="right">
+            <span class="logged-in">
+                <a class="user">Hello User!</a>
+                <button id="logout" class="logout"> Log Out</button>
+            </span>
+            <span class="notLI">
+                <button id="login" class="libutton" onclick="show()"> Log In</button>
+                <button id="sign-up" class="subutton"> Sign Up</button>
+            </span>
+        </span>
+    </div>
+</div>
+    <div class="row middle">
+        
+    <div id="content"><center>
+        <span class="heading" style="color:white;">Welcome To Last Words</span>
+        <br>We know how much last words are important to your loved ones.
+    </div>
+    <div id="creator">
+           
+        <div class="col-sm-6">
+                <br><br>
+        <div class=" column card">
+            <img src="IMG_20170325_085100.jpg" alt="Saurav" style="width:100%">
+            <span class="crtxt"><span class="name">Saurav Aggarwal</span>
+            <p class="title">Complete Front End</p>
+            <p>Chitkara University</p>
+            <div style="margin: 24px 0;">
+              <a href="#"><i class="fa fa-dribbble"></i></a> 
+              <a href="#"><i class="fa fa-twitter"></i></a>  
+              <a href="https://www.linkedin.com/in/saurav-aggarwal-6a6065153/"><i class="fa fa-linkedin"></i></a>  
+              <a href="https://www.facebook.com/saurav.aggarwal.77"><i class="fa fa-facebook"></i></a> 
+           </div></span>
+           <br>
+          </div>
+        </div>
+        <div class="col-sm-6">
+                <br><br>
+                <div class=" column card">
+                    <img src="back/2.png" alt="Shivam" style="width:100%">
+                   <span class="crtxt"> <span class="name">Shivam Ranjan</span>
+                    <p class="title">Complete Back End</p>
+                    <p>Chitkara University</p>
+                    <div style="margin: 24px 0;">
+                      <a href="#"><i class="fa fa-dribbble"></i></a> 
+                      <a href="#"><i class="fa fa-twitter"></i></a>  
+                      <a href=""><i class="fa fa-linkedin"></i></a>  
+                      <a href=""><i class="fa fa-facebook"></i></a> </span>
+                   </div>
+                   <br>
+                  </div>
+                </div>
+    </div>
+    <div id="about">
+<h1 style="font-family: Snell Roundhand, cursive">Inspiration</h1>
+<div class="col-sm-6">
+<span class="leftc">
+    <center>
+<img class="leftx" src="back/himym.jpg">
+</center></span></div>
+<div class="col-sm-6">
+<span style="color:white;" class="rightc">
+    <h2 style="color:white;font-family: DejaVu Sans Mono, monospace"><u>Last Words</u></h2>
+    <p style="font-family:Brush Script MT, Brush Script Std, cursive;font-size:36px">
+One of the most heart breaking episode of the famous sitcom
+How I Met Your Mother -"The Last Words" is the episode which
+made me realize the importance of the last words said by someone we care 
+and how it affecrts us. Due to which the idea of making this website came in my mind 
+so that every person could get some closure in case of a unexpected death.</p></span>
+    </div>
+</div>
+<div id="userdata">
+ <div class="data_display">
+     <h3 style="font-size: 24px">HEADING</h3>
+     <p>
+         Message <br>
+         98xxxxxx,96xxxxx,95xxxx<br>
+         Date on which it is added.<br>
+         date on which it has to sent.
+     </p>
+     <button onclick="">DELETE</button>
+     <button onclick="">EDIT</button>
+ </div>      
+    <img src="back/icons8-add-filled-96 (1).png" title="New Addition" class="add">
+    <span id="add_n">
+    <img src="back/icons8-upload-to-cloud-96.png" title="Upload" class="addshow f1st">
+    <img src="back/icons8-create-96.png" title="Create" class="addshow s2nd">
+</span>
+</div>
+    </div>
+    <div class="row bottom">
+
+    </div>
+</div>
+<div id="signin-form">
+    <span id="close">
+        <img class="close" src="back/icons8-multiply-filled-50.png">
+    </span>
+    <br>
+Username or E-mail
+<br>
+<input type="text">
+<br><br>
+Password
+<br>
+<input type="password">
+<br><br>
+<center>
+<button onclick="login()">LOG IN</button></center>
+</div>
+<div id="signup-form">
+    <span id="close">
+        <img class="close" src="back/icons8-multiply-filled-50.png">
+    </span>
+    <br>
+ First Name
+<br>
+<input type="text">
+<br>
+<br>
+Last Name
+<br>
+<input type="text">
+<br>
+<br>
+Username
+<br>
+<input type="text">
+<br>
+    <br>
+ E-mail
+<br>
+<input type="text">
+<br><br>
+Password
+<br>
+<input type="password">
+<br><br>
+ Renter-Password
+<br>
+<input type="password">
+<br><br>
+Contact Number
+<br>
+<input type="text">
+<br><br>
+Date Of Birth
+<br>
+<input type="date">
+<br><br>
+Gender
+<br>
+<select>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="other">Other</option>
+    </select>
+<br><br>
+<input class="tnc" type="checkbox"> 
+<span >I hereby agree To Terms And Conditions.</span> 
+<center>
+<button onclick="sup()">SIGN UP</button></center>
+</div>
+<div id="create-new">
+        <span id="close">
+            <img class="close" src="back/icons8-multiply-filled-50.png">
+        </span>
+        <br>
+    <h1>Title</h1>
+    
+    <input type="text" id="title">
+    <br><br>
+    <h1>Summary</h1>
+ 
+    <textarea id="summ"></textarea>
+    <br><br>
+    <h1>Recipients(only E-mails):</h1>
+ 
+    <span id="recipients">
+        <input type="text" class="rec">
+        </span><br>
+    <button onclick="add_rec()">Add More</button>
+    <br><br>
+    <h1>Time(in hrs):</h1>
+    
+    <input type="number" id="time">
+    <br><br>
+    <span class="upload">
+    <input type="file" style="height:auto;width:296px;">
+    <center>
+        <br>
+        <br>
+    <button onclick="open_Nav()">Submit</button></center>
+</span>  
+<span class="new">
+    <center>
+        <button onclick="record()">Start Record</button>
+    </center>
+</span>  
+</div>
+<div class="row" id="video-container" width="350px">
+        <video id="camera-stream" width="350px" autoplay></video>
+   <br>
+    <button>Start</button>
+    <button>Stop</button>
+    <button id="crecord" class="cr" onclick="cr()">Close</button> 
+    </div>
+    <div id="upnav" class="myupnav">
+        <br><br><br>
+       <h1 id="show_title">Title</h1>
+       <br>
+       <h1>Summary:</h1>
+       <p id="show_summ">here will be shown last message of mine<p>
+       <br>
+       <h1>Recipients:</h1>
+       <p>no.1<p>
+       <br>
+       <h1>Time of message recorded:</h1>
+       <p id="message_recorded">date and time<p>
+       <br>
+       <h1>Time at which message is to be sent:</h1>
+       <p id="message_senttime">date and time<p>
+       <br>
+       <button style="padding:4px 4px;border:none;background-color:green;text:white;" onclick="submit()">Ok</button>
+       
+      </div>
+<div id="verification-page">
+<center>    <h1>Verify your E-mail</h1>
+    <label style="color:whitesmoke">Enter 6 Digit verification Code</label><br>
+<input type="text">
+<br><br><br>
+<button id="verify" onclick="verify()">Verify</button>
+</center>
+</div>
+</div>
+<div class="confirmation box" onclick="confirm1()">
+    <p style="color: white;">Are you sure Want to Proceed?</p>
+    <br>
+    <center><button class="confirm_btn" onclick="ok()">Yes</button>
+    <button class="confirm_btn" onclick="ok()">No</button></center>
+    </div>
+</body>
+</html>

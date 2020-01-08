@@ -1,0 +1,55 @@
+.container{
+    width: 100%;
+}
+.heading{
+    font-size: 48px;
+  
+}
+#content
+{
+    position: relative;
+    top:40%;
+    color:white;
+}
+#about{
+    display: none;
+    padding:15px;
+}
+.middle{
+    height:100%;
+    
+}
+body{
+    background-image: url("back/250217.jpg");
+    background-size:cover;  
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgb(179, 7, 7);
+    transition-duration: 0.4s;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+img{
+    max-height: 400px;
+    max-width: 350px;
+    object-fit: cover;
+    
+}
+.leftx{
+    
+}
+.col-sm-6{
+    
+    color:white;
+    font-size: 24px;
+}
+select{
+    padding: 5px;
+    background-color: transparent;
+    border: 2px solid white;
+   
+}
+.tnc{
+
+}
